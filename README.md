@@ -43,10 +43,15 @@
 
 ## 🏗️ 프로젝트 구조
 GameServerPortfolio/
+
 ├── ServerCore/ # IOCP, JobQueue, MemoryPool 등 서버 코어
+
 ├── GameServer/ # 게임 서버 (Room, Player, AOI, PacketHandler)
+
 ├── Client (Unreal Project)/ # UE5 클라이언트
+
 ├── ProtobufCore/ # 패킷 정의 및 자동화 툴
+
 └── README.md
 
 
