@@ -69,17 +69,17 @@ cmake --build build --config Release
 
 ## 📚 기술 스택
 
-언어: C++17
+- 언어: C++17
 
-네트워크: Windows IOCP
+- 네트워크: Windows IOCP
 
-직렬화: Google Protobuf
+- 직렬화: Google Protobuf
 
-클라이언트: Unreal Engine 5.3
+- 클라이언트: Unreal Engine 5.3
 
-빌드/의존성 관리: CMake, vcpkg
+- 빌드/의존성 관리: CMake, vcpkg
 
-버전 관리: Git, GitHub
+- 버전 관리: Git, GitHub
 
 
 ## 🛠️ 문제 해결 사례
