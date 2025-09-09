@@ -43,3 +43,15 @@
 
 ## 🏗️ 프로젝트 구조
 
+
+
+---
+
+## ⚙️ 실행 방법
+
+### 1) 서버 실행
+```bash
+cmake -B build -S .
+cmake --build build --config Release
+./build/bin/Release/GameServer.exe
+
