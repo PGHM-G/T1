@@ -65,8 +65,9 @@ cmake -B build -S .
 cmake --build build --config Release
 ./build/bin/Release/GameServer.exe
 현재 Debug 모드에서는 라이브러리 불일치 문제로 실행이 되지 않고, Release 모드에서 안정적으로 실행 가능합니다.
+```
 
-📚 기술 스택
+## 📚 기술 스택
 
 언어: C++17
 
@@ -81,7 +82,7 @@ cmake --build build --config Release
 버전 관리: Git, GitHub
 
 
-🛠️ 문제 해결 사례
+## 🛠️ 문제 해결 사례
 1. AOI 재스폰 버그
 
 문제: 플레이어가 멀어지면 캐릭터가 사라지지만, 다시 접근해도 스폰되지 않음
@@ -98,7 +99,7 @@ cmake --build build --config Release
 
 배운 점: C++ 빌드 환경과 런타임 의존성 관리의 중요성
 
-📝 배운 점
+## 📝 배운 점
 
 서버 구조를 단순히 사용하는 것이 아니라, 왜 이런 설계가 필요한지 깊이 이해할 수 있었습니다.
 
@@ -106,11 +107,5 @@ cmake --build build --config Release
 
 게임 서버 개발은 끊임없는 디버깅과 안정성 확보의 연속이라는 사실을 체감했습니다.
 
-🔮 향후 계획
 
-로비/매칭 시스템 구현
-
-인벤토리 및 채팅 기능 추가
-
-AOI 최적화 기법 확장
 
