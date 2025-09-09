@@ -64,8 +64,10 @@ GameServerPortfolio/
 cmake -B build -S .
 cmake --build build --config Release
 ./build/bin/Release/GameServer.exe
-현재 Debug 모드에서는 라이브러리 불일치 문제로 실행이 되지 않고, Release 모드에서 안정적으로 실행 가능합니다.
 ```
+현재 Debug 모드에서는 라이브러리 불일치 문제로 실행이 되지 않고, Release 모드에서 안정적으로 실행 가능합니다.
+
+---
 
 ## 📚 기술 스택
 
@@ -81,23 +83,26 @@ cmake --build build --config Release
 
 - 버전 관리: Git, GitHub
 
+---
 
 ## 🛠️ 문제 해결 사례
 1. AOI 재스폰 버그
 
-문제: 플레이어가 멀어지면 캐릭터가 사라지지만, 다시 접근해도 스폰되지 않음
+- 문제: 플레이어가 멀어지면 캐릭터가 사라지지만, 다시 접근해도 스폰되지 않음
 
-원인: 클라이언트의 Players 맵에서 삭제 로직 누락
+- 원인: 클라이언트의 Players 맵에서 삭제 로직 누락
 
-해결: HandleDespawn에서 Players.Remove 추가 → 정상적으로 재스폰 확인
+- 해결: HandleDespawn에서 Players.Remove 추가 → 정상적으로 재스폰 확인
 
 2. Debug/Release 실행 불일치
 
-문제: Debug 모드 실행 불가, Release 모드만 가능
+- 문제: Debug 모드 실행 불가, Release 모드만 가능
 
-원인 추정: 라이브러리/런타임 불일치 (Protobuf, vcpkg)
+- 원인 추정: 라이브러리/런타임 불일치 (Protobuf, vcpkg)
 
-배운 점: C++ 빌드 환경과 런타임 의존성 관리의 중요성
+- 배운 점: C++ 빌드 환경과 런타임 의존성 관리의 중요성
+
+---
 
 ## 📝 배운 점
 
