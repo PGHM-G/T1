@@ -8,7 +8,7 @@
 ## ✨ 주요 특징
 
 - **IOCP 기반 이벤트 루프**  
-  Windows IOCP(Completion Port)를 활용해 수천 개의 연결을 효율적으로 처리
+  Windows IOCP(Completion Port)를 활용해 클라이언트 다수의 연결을 효율적으로 처리
 
 - **JobQueue & GlobalQueue**  
   객체 단위 JobQueue로 스레드 안전성 확보, GlobalQueue로 부하 분산 처리
